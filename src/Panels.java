@@ -86,8 +86,8 @@ public class Panels {
 
         // Set pop up panel -----------------------------------------------------
         //Creates and sets the values of the new appointment pop-up panel
-        pop_up_panel.setPreferredSize(new Dimension(800, 400));
-        pop_up_panel.setVisible(pop_visible); //makes frame visible
+            pop_up_panel.setPreferredSize(new Dimension(800, 400));
+            pop_up_panel.setVisible(pop_visible); //makes frame visible
 
         // Sets the values and positions of the text fields used for the appointment dialog
         new_apt_text = new JTextField();
@@ -460,6 +460,7 @@ public class Panels {
             }
         });
     }
+
     private  void animate_month_drag(){
         monthView.addMouseListener(new MouseAdapter(){
             public void mousePressed(MouseEvent e){
@@ -535,7 +536,6 @@ public class Panels {
         });
     }
 
-
     //Creates and returns the 'today' button
     private JButton getButton_today() {
         JButton button_today = new JButton("Today");
@@ -578,7 +578,6 @@ public class Panels {
         });
         return button_new_apt;
     }
-
 
     //convert a LocalTime object to a double
     private static double parse_time_to_double(LocalTime t){
